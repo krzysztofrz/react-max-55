@@ -1,0 +1,10 @@
+chcemy zrobic 4 przyciski
+po kliknieciu w kazdy przycisk bedzie sie od nim wyswietlaca inna tresc
+przyklad w assets example
+
+chcemy stowrzyc komponent ktory bedzie odpowiedzialny za przycisk i wyswietlana tresc ponizje
+komponent ma sie nazywac TabButton
+
+gdzie powinien byc stan ?
+
+komponent ma sie nazywac TabButton
