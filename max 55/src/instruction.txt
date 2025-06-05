@@ -8,3 +8,8 @@ komponent ma sie nazywac TabButton
 gdzie powinien byc stan ?
 
 komponent ma sie nazywac TabButton
+
+wykorzystaj dane z doloaczonego pliku data.js
+
+na koniec chcielibysmy jeszcze wykorzystac warunkowe renderowanie, czyli np jak sa 4 taby to na poczatku nie chcemy 
+nic wyswieltac tylko np "please select a topic" 
