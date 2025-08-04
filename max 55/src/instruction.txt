@@ -13,3 +13,11 @@ wykorzystaj dane z doloaczonego pliku data.js
 
 na koniec chcielibysmy jeszcze wykorzystac warunkowe renderowanie, czyli np jak sa 4 taby to na poczatku nie chcemy 
 nic wyswieltac tylko np "please select a topic" 
+
+
+
+zadanie nr 2
+wiecej w oneNote (wyswietlenie 4 grafik i kafelkow)
+stworz komponent CoreConcepts
+przekaz odpowiednie tresci tak zeby wyswietlily sie 4 rozne elementy
+
