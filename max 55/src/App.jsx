@@ -1,6 +1,7 @@
 import { useState } from "react";
 import TabButton from "./components/TabButton";
-import { EXAMPLES } from "./data.js";
+import { EXAMPLES, CORE_CONCEPTS } from "./data.js";
+import { CoreConcepts } from "./components/CoreConcepts";
 import "./App.css";
 
 function App() {
@@ -28,6 +29,11 @@ function App() {
 			<main>
 				<section id="core-concepts">
 					<h2>Core Concepts</h2>
+					<ul>
+						{CORE_CONCEPTS.map((conceptItem) => (
+							<CoreConcepts key={conceptItem.title} {...conceptItem} />
+						))}
+					</ul>
 				</section>
 			</main>
 			<menu className="tab-buttons">
