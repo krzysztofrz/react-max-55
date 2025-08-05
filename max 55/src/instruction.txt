@@ -1,3 +1,4 @@
+-------zadanie 1
 chcemy zrobic 4 przyciski
 po kliknieciu w kazdy przycisk bedzie sie od nim wyswietlaca inna tresc
 przyklad w assets example
@@ -16,8 +17,27 @@ nic wyswieltac tylko np "please select a topic"
 
 
 
-zadanie nr 2
+--------zadanie nr 2
 wiecej w oneNote (wyswietlenie 4 grafik i kafelkow)
 stworz komponent CoreConcepts
 przekaz odpowiednie tresci tak zeby wyswietlily sie 4 rozne elementy
 
+---------zadanie nr 3 krotkie
+
+w headerze mamy taki kod
+<header>
+				<img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
+				<h1>React Essentials</h1>
+				<p>
+					Fundamental React concepts you will need for almost any app you are
+					going to build!
+				</p>
+			</header>
+
+tam gdzie mamy pierwsze słowo w <p>
+to chcemy zeby ono dynamicznie sie zamienialo, 
+Fundamental
+Crucial
+Core
+chcemy zeby te slowa pojawialy sie randomowo
+slowo ma sie zmieniac po kazdym recznym odswiezeniu strony (a wiec nie potrzebujemy stanu)
