@@ -1,70 +1,15 @@
-import { useState } from "react";
-import TabButton from "./components/TabButton";
-import { EXAMPLES, CORE_CONCEPTS } from "./data.js";
-import { CoreConcepts } from "./components/CoreConcepts";
 import "./App.css";
+import { Header } from "./components/Header.jsx";
+import { CoreConcepts } from "./components/CoreConcpets/CoreConcepts.jsx";
+import { TabButtons } from "./components/TabButtons/TabButtons.jsx";
 
 function App() {
-	const [selectedTopic, setSelectedTopic] = useState();
-	function handleSelect(selectedButton) {
-		// selectedButton => 'components', 'jsx', 'props', 'state'
-		setSelectedTopic(selectedButton);
-		console.log(selectedButton);
-	}
-
-	//// funkcja losujaca
-	const reactDescriptions = ["Fundamental", "Crucial", "Core"];
-
-	function getRandomDescription() {
-		const index = Math.floor(Math.random() * reactDescriptions.length);
-		return reactDescriptions[index];
-	}
-	const description = getRandomDescription();
-
 	return (
-		<div>
-			<header>
-				<img src="src/assets/react-core-concepts.png" alt="Stylized atom" />
-				<h1>React Essentials</h1>
-				<p>
-					{description} React concepts you will need for almost any app you are
-					going to build!
-				</p>
-			</header>
-
-			<main>
-				<h2>Time to get started!</h2>
-			</main>
-			<main>
-				<section id="core-concepts">
-					<h2>Core Concepts</h2>
-					<ul>
-						{CORE_CONCEPTS.map((conceptItem) => (
-							<CoreConcepts key={conceptItem.title} {...conceptItem} />
-						))}
-					</ul>
-				</section>
-			</main>
-			<menu className="tab-buttons">
-				<TabButton onSelect={() => handleSelect("components")}>
-					Components
-				</TabButton>
-				<TabButton onSelect={() => handleSelect("jsx")}>JSX</TabButton>
-				<TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
-				<TabButton onSelect={() => handleSelect("state")}>State</TabButton>
-			</menu>
-			{!selectedTopic ? (
-				<p>Please select a topic</p>
-			) : (
-				<div id="tab-content">
-					<h3>{EXAMPLES[selectedTopic].title}</h3>
-					<p>{EXAMPLES[selectedTopic].description}</p>
-					<pre>
-						<code>{EXAMPLES[selectedTopic].code}</code>
-					</pre>
-				</div>
-			)}
-		</div>
+		<>
+			<Header />
+			<CoreConcepts />
+			<TabButtons />
+		</>
 	);
 }
 

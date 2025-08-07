@@ -1,4 +1,4 @@
-export const CoreConcepts = ({ image, title, description }) => {
+export const CoreConcept = ({ image, title, description }) => {
 	return (
 		<li>
 			<img src={image} alt={title} />
