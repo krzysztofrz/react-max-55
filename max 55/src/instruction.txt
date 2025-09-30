@@ -75,3 +75,6 @@ coreConcpets można by tak podzielic jeśli chodzi o pliki
 czyli jest jeden komponent a maja byc dwa
 
 
+--- zadanie 6
+
+w kompnencie tabButtons chcemy to co jest w menu i pod (czyli TabContent) wydzilic do komponentu Tabs, 
