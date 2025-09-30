@@ -64,3 +64,14 @@ tak ma wygladac App componentsfunction App() {
   );
 }
 i ma dzialac, dodatkowo jak klikamy w przycisk to "Cruciual" czyli pierwsze słowo w teksie sie nie zminia czyli to znaczy ze sie nie renderuje
+
+
+-------- zadanie 5
+
+Podziel komponent TabButtons na dwa (oba nowe komponenty będą korzystac z tego samego stanu
+
+
+coreConcpets można by tak podzielic jeśli chodzi o pliki
+czyli jest jeden komponent a maja byc dwa
+
+
