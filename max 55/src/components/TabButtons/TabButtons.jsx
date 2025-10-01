@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { TabButton } from "./TabButton";
 import { TabContent } from "./TabContent";
+import { Tab } from "./Tab";
 
 export const TabButtons = () => {
 	const [selectedTopic, setSelectedTopic] = useState();
@@ -12,15 +13,20 @@ export const TabButtons = () => {
 
 	return (
 		<>
-			<menu className="tab-buttons">
-				<TabButton onSelect={() => handleSelect("components")}>
-					Components
-				</TabButton>
-				<TabButton onSelect={() => handleSelect("jsx")}>JSX</TabButton>
-				<TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
-				<TabButton onSelect={() => handleSelect("state")}>State</TabButton>
-			</menu>
-			<TabContent topic={selectedTopic} />
+			<Tab
+				buttons={
+					<>
+						<TabButton onSelect={() => handleSelect("components")}>
+							Components
+						</TabButton>
+						<TabButton onSelect={() => handleSelect("jsx")}>JSX</TabButton>
+						<TabButton onSelect={() => handleSelect("props")}>Props</TabButton>
+						<TabButton onSelect={() => handleSelect("state")}>State</TabButton>
+					</>
+				}
+			>
+				<TabContent topic={selectedTopic} />
+			</Tab>
 		</>
 	);
 };
